@@ -1,0 +1,23 @@
+{
+    "projectName": "Parrotnest",
+    "version": "1.0.0",
+    "database": {
+        "type": "sqlite",
+        "fileName": "parrotnest.db",
+        "searchPatterns": ["*.db", "*.sqlite"]
+    },
+    "logging": {
+        "enabled": true,
+        "logFile": "dev-kit.log"
+    },
+    "build": {
+        "defaultConfiguration": "Release",
+        "outputFolder": "publish"
+    },
+    "autoDetect": {
+        "dotnet": ["*.sln", "*.csproj"],
+        "node": ["package.json"],
+        "python": ["requirements.txt", "setup.py", "pyproject.toml"],
+        "java": ["pom.xml", "build.gradle"]
+    }
+}
